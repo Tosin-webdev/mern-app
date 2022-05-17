@@ -16,6 +16,10 @@ app.use(cors());
 app.use("/posts", postRoutes);
 app.use("/user", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("welcome to finder api!");
+});
+
 const CONNECTION_URL =
   "mongodb+srv://user1:simple02@node-tutorial.rsb65.mongodb.net/newDB?retryWrites=true&w=majority";
 

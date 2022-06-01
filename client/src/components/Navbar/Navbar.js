@@ -40,7 +40,7 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <Link to="/" className={classes.brandContainer}>
         {/* <img component={Link} to="/" src={} alt="icon" height="45px" /> */}
-        memories
+        Indigo
         <img
           className={classes.image}
           src={memoriesLogo}

@@ -61,7 +61,7 @@
 //             >
 //               {user?.result.name.charAt(0)}
 //             </Avatar>
-//             <Typography className={classes.userName} variant="h6">
+//             <Typography className={classes.us erName} variant="h6">
 //               {user?.result.name}
 //             </Typography>
 //             <Button

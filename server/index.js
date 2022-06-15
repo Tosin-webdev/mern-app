@@ -32,7 +32,7 @@ const connectDB = async () => {
     });
     console.log(`mongoDB connected: ${con.connection.host}`);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     process.exit(1);
   }
 };
@@ -43,3 +43,4 @@ connectDB();
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
+

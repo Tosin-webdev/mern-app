@@ -1,9 +1,9 @@
 {
   "name": "server",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -11,6 +11,9 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "jest.nodeEnv": {
+    "NODE_OPTIONS": "--experimental-vm-modules"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +28,9 @@
     "mongoose": "^6.1.6"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
     "jest": "^28.1.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.3"
   }
 }
